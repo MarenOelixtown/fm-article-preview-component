@@ -9,11 +9,13 @@ html {
   padding: 0;
 }
 :root {
-  --very-dark-grayish-blue: hsl(217, 19%, 35%);
-  --desaturated-dark-blue: hsl(214, 17%, 51%);
-  --grayish-blue: hsl(212, 23%, 69%);
-  --light-grayish-blue: hsl(210, 46%, 95%);
+  --very-dark-grayish-blue: #48556a;
+  --desaturated-dark-blue: #6d7f97;
+  --grayish-blue: #9eafc2;
+  --light-grayish-blue: #ecf2f8;
   --white: hsl(0, 0%, 100%);
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
 }
 body {
   font-family: "Manrope", sans-serif;
@@ -48,4 +50,22 @@ main {
   max-height: 12.5rem;
   object-fit: cover;
   object-position: 75% 25%;
+}
+.article-preview__content {
+}
+.article-preview__heading {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--very-dark-grayish-blue);
+  letter-spacing: 0.013rem;
+  line-height: 1.5;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.article-preview__description {
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--desaturated-dark-blue);
+  letter-spacing: 0.008rem;
+  line-height: 1.5;
+  margin: 0 2rem 1rem 2rem;
 }
