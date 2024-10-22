@@ -36,28 +36,37 @@
           width="660"
           height="528"
         />
-        <figure class="article-preview__content">
+        <div class="article-preview__content">
           <h2 class="article-preview__heading">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </h2>
-          <p class="article-preview__description">
+          <p class="article-preview__description font-size--small">
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
-          <div>
-            <figcaption>
+          <div class="article-preview__footer">
+            <figure class="article-preview__author">
               <img
+                class="article-preview__author-img"
                 src="/images/avatar-michelle.webp"
                 alt="Portrait of author Michelle"
                 width="175"
                 height="175"
               />
-              <p>Michelle Appleton</p>
-              <time datetime="2020-06-28">28 Jun 2020</time>
-            </figcaption>
-            <div>
+              <figcaption>
+                <p class="article-preview__author-name font-size--small">
+                  Michelle Appleton
+                </p>
+                <time
+                  class="article-preview__date font-size--small"
+                  datetime="2020-06-28"
+                  >28 Jun 2020</time
+                >
+              </figcaption>
+            </figure>
+            <div hidden>
               <p>Share</p>
               <ul>
                 <li>
@@ -83,11 +92,11 @@
                 </li>
               </ul>
             </div>
-            <button type="button">
+            <button type="button" class="share-button">
               <img src="/images/icon-share.svg" alt="Share" />
             </button>
           </div>
-        </figure>
+        </div>
       </article>
     </main>
   </body>
