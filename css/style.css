@@ -141,7 +141,6 @@ main {
 @media (min-width: 75em) {
   main {
     max-width: 90rem;
-    overflow: visible;
   }
   .article-preview {
     max-width: 45.625rem;
@@ -154,6 +153,8 @@ main {
     min-height: 17.5rem;
     object-fit: cover;
     object-position: left;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .article-preview__heading {
     font-size: 1.3rem;
@@ -177,5 +178,16 @@ main {
     z-index: 1000;
     right: -10%;
     bottom: 35%;
+  }
+  .share-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--very-dark-grayish-blue) transparent transparent
+      transparent;
   }
 }
