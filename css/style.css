@@ -13,7 +13,7 @@ html {
   --desaturated-dark-blue: #6d7f97;
   --grayish-blue: #9eafc2;
   --light-grayish-blue: #ecf2f8;
-  --white: hsl(0, 0%, 100%);
+  --white: #ffffff;
   --font-weight-normal: 500;
   --font-weight-bold: 700;
 }
@@ -95,11 +95,44 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 1.5rem 2rem;
+  padding: 1.25rem 2rem;
 }
 .share-button {
   width: 32px;
   height: 32px;
   border: 0;
   border-radius: 50%;
+}
+.share-popup {
+  background-color: var(--very-dark-grayish-blue);
+  display: flex;
+  width: 10.938rem;
+  justify-content: space-between;
+}
+.share-popup__text {
+  text-transform: uppercase;
+  font-size: 0.813rem;
+  letter-spacing: 0.3rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--grayish-blue);
+}
+.share-popup__menu {
+  list-style: none;
+  width: 5.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show-popup--bg-color {
+  background-color: var(--very-dark-grayish-blue);
+  align-items: first baseline;
+}
+.show-popup__button--dark {
+  background-color: var(--desaturated-dark-blue);
+}
+.show-popup-button__icon--white path {
+  fill: var(--white);
+}
+.show-popup {
+  display: none;
 }

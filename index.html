@@ -66,34 +66,58 @@
                 >
               </figcaption>
             </figure>
-            <div hidden>
-              <p>Share</p>
-              <ul>
+
+            <div class="share-popup show-popup">
+              <p class="share-popup__text">Share</p>
+              <ul class="share-popup__menu">
                 <li>
                   <a
                     href="http://www.facebook.com/sharer.php?u=<URL>&p[title]=<TITLE>"
                     target="_blank"
-                    ><img src="/images/icon-facebook.svg" alt="Facebook"
+                    ><img
+                      src="/images/icon-facebook.svg"
+                      alt="Facebook"
+                      width="20"
+                      height="20"
                   /></a>
                 </li>
                 <li>
                   <a
                     href="http://twitter.com/share?text=<TITLE>&url=<URL>"
                     target="_blank"
-                    ><img src="/images/icon-twitter.svg" alt="Twitter"
+                    ><img
+                      src="/images/icon-twitter.svg"
+                      alt="Twitter"
+                      width="20"
+                      height="16.25"
                   /></a>
                 </li>
                 <li>
                   <a
                     href="http://pinterest.com/pin/create/button/?url=<URL>&description=<TITLE>"
                     target="_blank"
-                    ><img src="/images/icon-pinterest.svg" alt="Pinterest"
+                    ><img
+                      src="/images/icon-pinterest.svg"
+                      alt="Pinterest"
+                      width="20"
+                      height="20"
                   /></a>
                 </li>
               </ul>
             </div>
-            <button type="button" class="share-button">
-              <img src="/images/icon-share.svg" alt="Share" />
+
+            <button type="button" class="share-button show-popup__button--dark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="13"
+                class="show-popup-button__icon--white"
+              >
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
             </button>
           </div>
         </div>
