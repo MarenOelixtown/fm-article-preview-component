@@ -137,3 +137,30 @@ main {
 .show-popup {
   display: none;
 }
+
+@media (min-width: 75em) {
+  main {
+    max-width: 90rem;
+  }
+  .article-preview {
+    max-width: 45.625rem;
+    display: flex;
+  }
+  .article-preview__img {
+    max-width: 17.813rem;
+    min-height: 17.5rem;
+    object-fit: cover;
+    object-position: left;
+  }
+  .article-preview__heading {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    letter-spacing: 0.01rem;
+  }
+  .article-preview__footer {
+    max-height: none;
+  }
+  .article-preview__description {
+    margin-bottom: 0;
+  }
+}
