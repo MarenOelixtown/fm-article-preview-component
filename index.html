@@ -24,6 +24,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/index.js" defer></script>
   </head>
   <body>
     <main>
@@ -46,8 +47,14 @@
             felt slightly bare and uninviting. I’ve got some simple tips to help
             you make any room feel complete.
           </p>
-          <div class="article-preview__footer">
-            <figure class="article-preview__author">
+          <div
+            class="article-preview__footer"
+            data-js="article-preview__footer"
+          >
+            <figure
+              class="article-preview__author"
+              data-js="article-preview__author"
+            >
               <img
                 class="article-preview__author-img"
                 src="/images/avatar-michelle.webp"
@@ -67,7 +74,7 @@
               </figcaption>
             </figure>
 
-            <div class="share-popup show-popup">
+            <div class="share-popup show-popup" data-js="share-popup">
               <p class="share-popup__text">Share</p>
               <ul class="share-popup__menu">
                 <li>
@@ -106,12 +113,13 @@
               </ul>
             </div>
 
-            <button type="button" class="share-button show-popup__button--dark">
+            <button type="button" class="share-button" data-js="share-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="15"
                 height="13"
-                class="show-popup-button__icon--white"
+                class=""
+                data-js="button-icon"
               >
                 <path
                   fill="#6E8098"

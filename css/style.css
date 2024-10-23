@@ -96,6 +96,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 2rem;
+  max-height: 4.5rem;
 }
 .share-button {
   width: 32px;
